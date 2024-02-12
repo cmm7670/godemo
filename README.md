@@ -11,6 +11,10 @@
   - Run `go mod init github.com/cmm7670/godemo`. 
   - Normally you'd want to initialize with the address that the module will be published to.
   - This will create a go.mod file in the root of the project.
+    - The go.mod file is used to define the module and its dependencies.
+    - All outside modules which are needed for the project are listed here.
+    - Running `go get` will download the dependencies and add them to the go.mod file.
+    - Running `go mod tidy` will remove any dependencies that are not used in the project.
 - Create a Go package.
   - A package is a folder that contains Go code.
   - Create a folder named 'mascot' and a file inside it named 'mascot.go'.
